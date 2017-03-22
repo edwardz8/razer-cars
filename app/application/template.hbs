@@ -1,0 +1,32 @@
+
+<nav class="nav">
+        <div class="nav-left">
+          <img src="./images/shiftlogo.png" alt="" class="nav-item logo">
+          <a href="#" class="nav-item is-brand">Razer Cars</a>
+        </div>
+
+        <div class="nav-right">
+          <li><a href="/" class="nav-item is-danger is-hovered">Home</a>
+           {{#link-to "home"}}Home{{/link-to}}</li>
+          <a href="/" class="nav-item is-danger is-hovered">All Manufacturers</a>
+          <a href="/" class="nav-item is-danger is-hovered">Add Manufacturer</a>
+
+        </div>
+      </nav>
+
+      <div class="section">
+        <div class="container is-fluid">
+          <article class="message">
+            <div class="message-header">
+              <p>Hello</p>
+            </div>
+            <div class="message-body">
+              <p class="title">Welcome to Razer Cars!</p>
+              <p>Your one stop shop for all your car stats needs</p>
+              <button class="">See All Manufacturers</button>
+            </div>
+          </article>
+        </div>
+      </div>
+
+{{outlet}}
