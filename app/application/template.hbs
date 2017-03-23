@@ -6,27 +6,13 @@
         </div>
 
         <div class="nav-right">
-          <li><a href="/" class="nav-item is-danger is-hovered">Home</a>
-           {{#link-to "home"}}Home{{/link-to}}</li>
-          <a href="/" class="nav-item is-danger is-hovered">All Manufacturers</a>
-          <a href="/" class="nav-item is-danger is-hovered">Add Manufacturer</a>
+          <a href="/" class="nav-item is-danger is-hovered">
+            {{#link-to "index"}}Home{{/link-to}}</a>
+
+          <a href="/manufacturers" class="nav-item is-danger is-hovered">All Manufacturers</a>
+          <a href="/manufacturers-new" class="nav-item is-danger is-hovered">Add Manufacturers</a>
 
         </div>
       </nav>
-
-      <div class="section">
-        <div class="container is-fluid">
-          <article class="message">
-            <div class="message-header">
-              <p>Hello</p>
-            </div>
-            <div class="message-body">
-              <p class="title">Welcome to Razer Cars!</p>
-              <p>Your one stop shop for all your car stats needs</p>
-              <button class="">See All Manufacturers</button>
-            </div>
-          </article>
-        </div>
-      </div>
 
 {{outlet}}

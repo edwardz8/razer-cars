@@ -1,0 +1,27 @@
+
+      <figure class="media media-content">
+        <div class="message">
+      <div class="message-header">Add New Manufacturers</div>
+    </div>
+      <form class="message-body" {{action "save" on="submit"}}>
+          <div class="message-inputs">
+        <div class="control">
+          <input type="text" placeholder="brandMake"
+          value=formValues.brandMake>
+        </div>
+
+        <div class="control">
+          <input type="text" placeholder="brandCountry"
+          value=formValues.brandCountry>
+        </div>
+
+      </div>
+
+        <div class="new-submit-btns">
+          <button type="button" class="back" name="button">Back</button>
+
+          <button type="button" value="button" class="new-submit" name="new-submit">Submit</button>
+        </div>
+
+      </form>
+    </figure>

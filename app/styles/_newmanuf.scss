@@ -1,0 +1,32 @@
+
+.control {
+  padding: 1rem;
+}
+
+input {
+  width: 90%;
+  padding: 1rem;
+  border: 0;
+  outline: none;
+}
+
+.message-inputs {
+  //border-bottom: .2rem solid black;
+  width: 100%;
+  margin: 0;
+}
+
+.back, .new-submit {
+  padding: 1rem;
+  margin-left: 1rem;
+  font-size: 1rem;
+  margin-top: 2rem;
+  background: #b44343;
+  outline: none;
+  border: 0;
+
+  &:hover {
+    background: black;
+    color: #b44343;
+  }
+}
