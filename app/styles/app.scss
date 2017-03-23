@@ -1,5 +1,6 @@
 //@import "bulma";
 @import 'newmanuf';
+@import 'table';
 
 
 body {
@@ -13,7 +14,7 @@ body {
 }
 
 .nav {
-  background: black;
+  background: #262626;
   display: flex;
   justify-content: space-between;
   padding: .5rem;
@@ -31,8 +32,7 @@ body {
 }
 
 .logo {
-  max-width: 8rem;
-  align-items: center;
+  max-width: 9rem;
 }
 
 .is-brand {
@@ -52,19 +52,11 @@ a {
 }
 
 .media {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .media-content {
   border: .2rem solid black;
-}
-
-.message-header {
-  border-bottom: .2rem solid black;
-  padding: 1rem;
-  padding-left: 2.5rem;
-  font-size: 2rem;
-  background: #ddd;
 }
 
 .message-body {
@@ -78,7 +70,6 @@ a {
   margin-top: 2rem;
   background: #b44343;
   outline: none;
-  border: 0;
 
   &:hover {
     background: black;
@@ -88,23 +79,3 @@ a {
 .index-man-btn {
   margin-top: 3rem;
 }
-
-.table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th, td {
-    border-bottom: 2px solid #ddd;
-    padding: 1rem;
-    text-align: center;
-}
-
-th {
-  background-color: black;
-  color: #ddd;
-}
-
-tr:nth-child(odd) {background-color: #b9b1b1}
-
-tr:hover {background-color: #f2f2f2}
