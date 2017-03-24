@@ -1,10 +1,11 @@
 //@import "bulma";
 @import 'newmanuf';
 @import 'table';
+@import 'carlist';
 
 
 body {
-  background: #d5d5d5;
+  background: #132838;
   margin: 0;
 }
 
@@ -47,8 +48,13 @@ a {
   color: white;
 
   &:hover {
-    color: #b44343;
+    //color: #b44343;
+    color: #00d192;
   }
+}
+
+p {
+  color: #ddd;
 }
 
 .media {

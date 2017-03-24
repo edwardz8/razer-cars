@@ -2,7 +2,7 @@
     border-bottom: .2rem solid black;
     padding: 1rem;
     font-size: 2rem;
-    color: #b44343;
+    color: #00d192;
     text-align: center;
 }
 
@@ -18,10 +18,14 @@ th, td {
 }
 
 th {
-  background-color: black;
+  background-color: #3a567a;
   color: #ddd;
 }
 
-tr:nth-child(odd) {background-color: #b9b1b1}
+td {
+  color: #ddd;
+}
 
-tr:hover {background-color: #f2f2f2}
+tr:nth-child(odd) {background-color: #000}
+
+tr:hover {background-color: #575656}

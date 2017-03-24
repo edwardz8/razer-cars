@@ -1,21 +1,22 @@
 import Ember from 'ember';
-const brands = 'https://razerapi.herokuapp.com/yourname/basic/brands';
+import config from 'razer-cars/config/environment';
 
 export default Ember.Controller.extend({
     formValues: {
-      brandMake: '',
-      brandCountry: '',
+      name: '',
+      country: '',
     },
 
     actions: {
       save() {
-        fetch(brands, {
+        fetch(`${config.apiUrl}/brands`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', accept: 'application/json'},
           body: JSON.stringify(this.formValues),
         }).then(r => r.json())
         .then(data => {
-          this.transitionToRoute('manufacturers')
+          this.transitionToRoute('manufacturers'),
+          this.set('formValues', {});
         })
       }
     }
