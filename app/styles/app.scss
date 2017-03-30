@@ -5,13 +5,18 @@
 
 
 body {
-  background: #132838;
+  background: #ddd;
   margin: 0;
+  font-family: sans-serif;
 }
 
 .section {
   margin: 0 auto;
   max-width: 65rem;
+}
+
+.input {
+  background: #e0a2a2;
 }
 
 .nav {
@@ -43,18 +48,22 @@ body {
   align-items: center;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
 a {
   text-decoration: none;
   color: white;
 
   &:hover {
-    //color: #b44343;
-    color: #00d192;
+    color: #bd5050;
   }
 }
 
 p {
-  color: #ddd;
+  color: black;
 }
 
 .media {
@@ -74,7 +83,7 @@ p {
   padding: 1rem;
   font-size: 1rem;
   margin-top: 2rem;
-  background: #b44343;
+  background: #bd5050;
   outline: none;
 
   &:hover {

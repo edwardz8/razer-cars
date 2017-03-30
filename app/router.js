@@ -12,9 +12,10 @@ Router.map(function() {
   this.route('manufacturer', { path: '/manufacturers'}, function() {
     this.route('new');
     this.route('car', { path: '/:id'}, function() {
-
+    this.route('new');
       });
 });
+  this.route('Brand');
 });
 
 export default Router;

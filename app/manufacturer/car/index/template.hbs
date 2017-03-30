@@ -6,9 +6,9 @@
 </div>
 <form class="message-body" {{action "save" on="submit"}}>
 
-  <div class="new-submit-btns new-car">
-    <button type="submit" value="button" class="new-submit" name="new-submit">Add New Car</button>
-  </div>
+  {{#link-to 'manufacturer.car' class="new-btn-pls"}}Edit Manufacturer{{/link-to}}
+  <button type="button" class="new-btn-pls">Delete Manufacturer</button>
+  <button type="button" class="new-btn-pls">Add New</button>
 
 </form>
 </figure>
@@ -20,14 +20,12 @@
               <p>Ford</p>
             </div>
             <div class="card__body">
-              <p>Horsepower:</p>
-              <p>Price:</p>
+              <p>Horsepower: 350</p>
+              <p>Price: $20,000</p>
             </div>
         </figure>
       </div>
     </div>
-
-
 </div>
 </div>
 

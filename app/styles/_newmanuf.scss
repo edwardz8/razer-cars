@@ -10,10 +10,17 @@ input {
   outline: none;
 }
 
+.message-header {
+  color: #bd5050;
+}
+
 .message-inputs {
-  //border-bottom: .2rem solid black;
   width: 100%;
   margin: 0;
+}
+
+.new-submit-btns {
+  display: flex;
 }
 
 .back, .new-submit {
@@ -25,9 +32,15 @@ input {
   outline: none;
   border: 0;
   width: 7rem;
+  color: black;
+  text-align: center;
 
   &:hover {
     background: black;
     color: #b44343;
   }
+}
+
+.input {
+  background: #e0a2a2;
 }

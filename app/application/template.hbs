@@ -1,16 +1,23 @@
-
-<nav class="nav">
+      <nav class="nav">
         <div class="nav-left">
           <img src="./images/shiftlogo.png" alt="" class="nav-item logo">
-          <a href="#" class="nav-item is-brand">Razer Cars</a>
+          <a href="#" class="nav-item is-brand">
+            {{#link-to "index"}}Razer Cars{{/link-to}}
+          </a>
         </div>
 
         <div class="nav-right">
           <a href="/" class="nav-item is-danger is-hovered">
-            {{#link-to "index"}}Home{{/link-to}}</a>
+            {{#link-to "index"}}Home{{/link-to}}
+          </a>
 
-          <a href="manufacturers" class="nav-item is-danger is-hovered">All Manufacturers</a>
-          <a href="manufacturers/new" class="nav-item is-danger is-hovered">Add Manufacturers</a>
+          <div class="nav--item">
+          {{#link-to "manufacturer"}}All Manufacturer{{/link-to}}
+        </div>
+
+          <div class="nav--item">
+          {{#link-to "manufacturer.new"}}Add Manufacturer{{/link-to}}
+        </div>
 
         </div>
       </nav>
